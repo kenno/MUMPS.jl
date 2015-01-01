@@ -1,0 +1,370 @@
+<!doctype html>
+
+<meta charset="utf-8">
+
+<title>MUMPS</title>
+
+<link rel="stylesheet" type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/4.5.0/codemirror.min.css">
+
+<link rel="stylesheet" type="text/css" href="static/custom.css">
+
+<h1 class='package-header'>MUMPS</h1>
+
+<h1>`MUMPS.jl` User's Manual</h1>
+<p>Please refer to the <a href="#module-reference">reference</a> section below for calling sequences.</p><h1 id='module-reference'>Reference</h1>
+<ul class='index'>
+<li >
+<strong>methods:</strong>
+</li>
+<li >
+<ul >
+<li >
+<a href='#associate_matrix(mumps::Mumps,A::SparseMatrixCSC{Tv,Ti<:Integer})'>associate_matrix(mumps::Mumps,A::SparseMatrixCSC{Tv,Ti<:Integer})</a></li>
+<li >
+<a href='#associate_rhs(mumps::Mumps,rhs::Array{Float64,N})'>associate_rhs(mumps::Mumps,rhs::Array{Float64,N})</a></li>
+<li >
+<a href='#factorize(mumps::Mumps)'>factorize(mumps::Mumps)</a></li>
+<li >
+<a href='#factorize(mumps::Mumps,A::Array{Float64,N})'>factorize(mumps::Mumps,A::Array{Float64,N})</a></li>
+<li >
+<a href='#factorize(mumps::Mumps,A::SparseMatrixCSC{Tv,Ti<:Integer})'>factorize(mumps::Mumps,A::SparseMatrixCSC{Tv,Ti<:Integer})</a></li>
+<li >
+<a href='#finalize(mumps::Mumps)'>finalize(mumps::Mumps)</a></li>
+<li >
+<a href='#get_solution(mumps::Mumps)'>get_solution(mumps::Mumps)</a></li>
+<li >
+<a href='#solve(A::SparseMatrixCSC{Tv,Ti<:Integer},rhs::Array{Float64,N})'>solve(A::SparseMatrixCSC{Tv,Ti<:Integer},rhs::Array{Float64,N})</a></li>
+<li >
+<a href='#solve(mumps::Mumps)'>solve(mumps::Mumps)</a></li>
+<li >
+<a href='#solve(mumps::Mumps,A::SparseMatrixCSC{Tv,Ti<:Integer},rhs::Array{Float64,N})'>solve(mumps::Mumps,A::SparseMatrixCSC{Tv,Ti<:Integer},rhs::Array{Float64,N})</a></li>
+<li >
+<a href='#solve(mumps::Mumps,rhs::Array{Float64,N})'>solve(mumps::Mumps,rhs::Array{Float64,N})</a></li>
+</ul>
+</li>
+<li >
+<strong>types:</strong>
+</li>
+<li >
+<ul >
+<li >
+<a href='#Mumps'>Mumps</a></li>
+</ul>
+</li>
+<li >
+<strong>globals:</strong>
+</li>
+<li >
+<ul >
+<li >
+<a href='#default_cntl'>default_cntl</a></li>
+<li >
+<a href='#default_icntl'>default_icntl</a></li>
+<li >
+<a href='#mumps_definite'>mumps_definite</a></li>
+<li >
+<a href='#mumps_symmetric'>mumps_symmetric</a></li>
+<li >
+<a href='#mumps_unsymmetric'>mumps_unsymmetric</a></li>
+</ul>
+</li>
+</ul>
+<div class='entries'>
+<div class='entry'>
+<div id='associate_matrix(mumps::Mumps,A::SparseMatrixCSC{Tv,Ti<:Integer})' class='entry-name category-method'>
+<div class='category'>[method] &mdash; </div> associate_matrix(mumps::Mumps,A::SparseMatrixCSC{Tv,Ti<:Integer})
+</div>
+<div class='entry-body'>
+<p>Register the matrix <code>A</code> with the <code>Mumps</code> object <code>mumps</code>. This function makes it possible to define the matrix on the host only. If the matrix is defined on all nodes, there is no need to use this function.</p><div class='entry-meta'>
+<strong>Details:</strong>
+<table class='meta-table'>
+<tr >
+<td><strong>source:</strong></td><td >
+<a href='file:///Users/dpo1/.julia/v0.3/MUMPS/src/MUMPS.jl'>MUMPS/src/MUMPS.jl:175</a></td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class='entry'>
+<div id='associate_rhs(mumps::Mumps,rhs::Array{Float64,N})' class='entry-name category-method'>
+<div class='category'>[method] &mdash; </div> associate_rhs(mumps::Mumps,rhs::Array{Float64,N})
+</div>
+<div class='entry-body'>
+<p>Register the right-hand side(s) <code>rhs</code> with the <code>Mumps</code> object <code>mumps</code>. This function makes it possible to define the right- -hand side(s) on the host only. If the right-hand side(s) are defined on all nodes, there is no need to use this function.</p><div class='entry-meta'>
+<strong>Details:</strong>
+<table class='meta-table'>
+<tr >
+<td><strong>source:</strong></td><td >
+<a href='file:///Users/dpo1/.julia/v0.3/MUMPS/src/MUMPS.jl'>MUMPS/src/MUMPS.jl:235</a></td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class='entry'>
+<div id='factorize(mumps::Mumps)' class='entry-name category-method'>
+<div class='category'>[method] &mdash; </div> factorize(mumps::Mumps)
+</div>
+<div class='entry-body'>
+<p>Factorize the matrix registered with the <code>Mumps</code> instance. The matrix must have been previously registered with <code>associate_matrix()</code>. After the factorization, the determinant, if requested, is stored in <code>mumps.det</code>. The MUMPS error code is stored in <code>mumps.err</code>. </p><div class='entry-meta'>
+<strong>Details:</strong>
+<table class='meta-table'>
+<tr >
+<td><strong>source:</strong></td><td >
+<a href='file:///Users/dpo1/.julia/v0.3/MUMPS/src/MUMPS.jl'>MUMPS/src/MUMPS.jl:215</a></td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class='entry'>
+<div id='factorize(mumps::Mumps,A::Array{Float64,N})' class='entry-name category-method'>
+<div class='category'>[method] &mdash; </div> factorize(mumps::Mumps,A::Array{Float64,N})
+</div>
+<div class='entry-body'>
+<p>Combined associate_matrix / factorize. Presume that <code>A</code> is available on all nodes.</p><div class='entry-meta'>
+<strong>Details:</strong>
+<table class='meta-table'>
+<tr >
+<td><strong>source:</strong></td><td >
+<a href='file:///Users/dpo1/.julia/v0.3/MUMPS/src/MUMPS.jl'>MUMPS/src/MUMPS.jl:302</a></td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class='entry'>
+<div id='factorize(mumps::Mumps,A::SparseMatrixCSC{Tv,Ti<:Integer})' class='entry-name category-method'>
+<div class='category'>[method] &mdash; </div> factorize(mumps::Mumps,A::SparseMatrixCSC{Tv,Ti<:Integer})
+</div>
+<div class='entry-body'>
+<p>Combined associate_matrix / factorize. Presume that <code>A</code> is available on all nodes.</p><div class='entry-meta'>
+<strong>Details:</strong>
+<table class='meta-table'>
+<tr >
+<td><strong>source:</strong></td><td >
+<a href='file:///Users/dpo1/.julia/v0.3/MUMPS/src/MUMPS.jl'>MUMPS/src/MUMPS.jl:294</a></td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class='entry'>
+<div id='finalize(mumps::Mumps)' class='entry-name category-method'>
+<div class='category'>[method] &mdash; </div> finalize(mumps::Mumps)
+</div>
+<div class='entry-body'>
+<p>Terminate a Mumps instance.</p><div class='entry-meta'>
+<strong>Details:</strong>
+<table class='meta-table'>
+<tr >
+<td><strong>source:</strong></td><td >
+<a href='file:///Users/dpo1/.julia/v0.3/MUMPS/src/MUMPS.jl'>MUMPS/src/MUMPS.jl:165</a></td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class='entry'>
+<div id='get_solution(mumps::Mumps)' class='entry-name category-method'>
+<div class='category'>[method] &mdash; </div> get_solution(mumps::Mumps)
+</div>
+<div class='entry-body'>
+<p>Retrieve the solution of the system solved by <code>solve()</code>. This function makes it possible to ask MUMPS to assemble the final solution on the host only, and to retrieve it there.</p><div class='entry-meta'>
+<strong>Details:</strong>
+<table class='meta-table'>
+<tr >
+<td><strong>source:</strong></td><td >
+<a href='file:///Users/dpo1/.julia/v0.3/MUMPS/src/MUMPS.jl'>MUMPS/src/MUMPS.jl:279</a></td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class='entry'>
+<div id='solve(A::SparseMatrixCSC{Tv,Ti<:Integer},rhs::Array{Float64,N})' class='entry-name category-method'>
+<div class='category'>[method] &mdash; </div> solve(A::SparseMatrixCSC{Tv,Ti<:Integer},rhs::Array{Float64,N})
+</div>
+<div class='entry-body'>
+<p>Combined initialize / analyze / factorize / solve. Presume that <code>A</code> and <code>rhs</code> are available on all nodes. The optional keyword argument <code>sym</code> indicates the symmetry of <code>A</code>. The solution is retrieved and returned.</p><div class='entry-meta'>
+<strong>Details:</strong>
+<table class='meta-table'>
+<tr >
+<td><strong>returns:</strong></td><td >
+<code>(Array{Float64,N},)</code>
+</td>
+</tr>
+<tr >
+<td><strong>source:</strong></td><td >
+<a href='file:///Users/dpo1/.julia/v0.3/MUMPS/src/MUMPS.jl'>MUMPS/src/MUMPS.jl:336</a></td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class='entry'>
+<div id='solve(mumps::Mumps)' class='entry-name category-method'>
+<div class='category'>[method] &mdash; </div> solve(mumps::Mumps)
+</div>
+<div class='entry-body'>
+<p>Solve the system registered with the <code>Mumps</code> object <code>mumps</code>. The matrix and right-hand side(s) must have been previously registered with <code>associate_matrix()</code> and <code>associate_rhs()</code>. The optional keyword argument <code>transposed</code> indicates whether the user wants to solve the forward or transposed system. The solution is stored internally and must be retrieved with <code>get_solution()</code>.</p><div class='entry-meta'>
+<strong>Details:</strong>
+<table class='meta-table'>
+<tr >
+<td><strong>source:</strong></td><td >
+<a href='file:///Users/dpo1/.julia/v0.3/MUMPS/src/MUMPS.jl'>MUMPS/src/MUMPS.jl:261</a></td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class='entry'>
+<div id='solve(mumps::Mumps,A::SparseMatrixCSC{Tv,Ti<:Integer},rhs::Array{Float64,N})' class='entry-name category-method'>
+<div class='category'>[method] &mdash; </div> solve(mumps::Mumps,A::SparseMatrixCSC{Tv,Ti<:Integer},rhs::Array{Float64,N})
+</div>
+<div class='entry-body'>
+<p>Combined analyze / factorize / solve. Presume that <code>A</code> and <code>rhs</code> are available on all nodes. The optional keyword argument <code>transposed</code> indicates whether the user wants to solve the forward or transposed system. The solution is retrieved and returned.</p><div class='entry-meta'>
+<strong>Details:</strong>
+<table class='meta-table'>
+<tr >
+<td><strong>returns:</strong></td><td >
+<code>(Array{Float64,N},)</code>
+</td>
+</tr>
+<tr >
+<td><strong>source:</strong></td><td >
+<a href='file:///Users/dpo1/.julia/v0.3/MUMPS/src/MUMPS.jl'>MUMPS/src/MUMPS.jl:322</a></td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class='entry'>
+<div id='solve(mumps::Mumps,rhs::Array{Float64,N})' class='entry-name category-method'>
+<div class='category'>[method] &mdash; </div> solve(mumps::Mumps,rhs::Array{Float64,N})
+</div>
+<div class='entry-body'>
+<p>Combined associate_rhs / solve. Presume that <code>rhs</code> is available on all nodes. The optional keyword argument <code>transposed</code> indicates whether the user wants to solve the forward or transposed system. The solution is retrieved and returned.</p><div class='entry-meta'>
+<strong>Details:</strong>
+<table class='meta-table'>
+<tr >
+<td><strong>returns:</strong></td><td >
+<code>(Array{Float64,N},)</code>
+</td>
+</tr>
+<tr >
+<td><strong>source:</strong></td><td >
+<a href='file:///Users/dpo1/.julia/v0.3/MUMPS/src/MUMPS.jl'>MUMPS/src/MUMPS.jl:310</a></td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class='entry'>
+<div id='Mumps' class='entry-name category-type'>
+<div class='category'>[type] &mdash; </div> Mumps
+</div>
+<div class='entry-body'>
+<p>Abstract type representing a factorization with MUMPS. All constructor arguments are optional. By default a general unsymmetric matrix will be analyzed/factorized with default integer and real parameters</p><div class='entry-meta'>
+<strong>Details:</strong>
+<table class='meta-table'>
+<tr >
+<td><strong>source:</strong></td><td >
+<a href='file:///Users/dpo1/.julia/v0.3/MUMPS/src/MUMPS.jl'>MUMPS/src/MUMPS.jl:91</a></td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class='entry'>
+<div id='default_cntl' class='entry-name category-global'>
+<div class='category'>[global] &mdash; </div> default_cntl
+</div>
+<div class='entry-body'>
+<p>Default real parameters</p><div class='entry-meta'>
+<strong>Details:</strong>
+<table class='meta-table'>
+<tr >
+<td><strong>source:</strong></td><td >
+<a href='file:///Users/dpo1/.julia/v0.3/MUMPS/src/MUMPS.jl'>MUMPS/src/MUMPS.jl:65</a></td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class='entry'>
+<div id='default_icntl' class='entry-name category-global'>
+<div class='category'>[global] &mdash; </div> default_icntl
+</div>
+<div class='entry-body'>
+<p>Default integer parameters.</p><div class='entry-meta'>
+<strong>Details:</strong>
+<table class='meta-table'>
+<tr >
+<td><strong>source:</strong></td><td >
+<a href='file:///Users/dpo1/.julia/v0.3/MUMPS/src/MUMPS.jl'>MUMPS/src/MUMPS.jl:20</a></td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class='entry'>
+<div id='mumps_definite' class='entry-name category-global'>
+<div class='category'>[global] &mdash; </div> mumps_definite
+</div>
+<div class='entry-body'>
+<p>Constant indicating that a symmetric definite matrix will be analyzed and factorized</p><div class='entry-meta'>
+<strong>Details:</strong>
+<table class='meta-table'>
+<tr >
+<td><strong>source:</strong></td><td >
+<a href='file:///Users/dpo1/.julia/v0.3/MUMPS/src/MUMPS.jl'>MUMPS/src/MUMPS.jl:80</a></td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class='entry'>
+<div id='mumps_symmetric' class='entry-name category-global'>
+<div class='category'>[global] &mdash; </div> mumps_symmetric
+</div>
+<div class='entry-body'>
+<p>Constant indicating that a general symmetric matrix will be analyzed and factorized</p><div class='entry-meta'>
+<strong>Details:</strong>
+<table class='meta-table'>
+<tr >
+<td><strong>source:</strong></td><td >
+<a href='file:///Users/dpo1/.julia/v0.3/MUMPS/src/MUMPS.jl'>MUMPS/src/MUMPS.jl:84</a></td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class='entry'>
+<div id='mumps_unsymmetric' class='entry-name category-global'>
+<div class='category'>[global] &mdash; </div> mumps_unsymmetric
+</div>
+<div class='entry-body'>
+<p>Constant indicating that a general unsymmetric matrix will be analyzed and factorized</p><div class='entry-meta'>
+<strong>Details:</strong>
+<table class='meta-table'>
+<tr >
+<td><strong>source:</strong></td><td >
+<a href='file:///Users/dpo1/.julia/v0.3/MUMPS/src/MUMPS.jl'>MUMPS/src/MUMPS.jl:76</a></td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</div>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/4.5.0/codemirror.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/4.5.0/mode/julia/julia.min.js"></script>
+
+
+
+<script type="text/javascript" src="static/custom.js"></script>
+
