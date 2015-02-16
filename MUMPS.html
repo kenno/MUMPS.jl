@@ -23,27 +23,29 @@
 <li >
 <ul >
 <li >
-<a href='#associate_matrix(mumps::Mumps,A::SparseMatrixCSC{Tv,Ti<:Integer})'>associate_matrix(mumps::Mumps,A::SparseMatrixCSC{Tv,Ti<:Integer})</a></li>
+<a href='#associate_matrix{Tv<:Union(Complex{Float32}, Complex{Float64}, Float32, Float64), Ti<:Int64}(mumps::Mumps{Tv<:Union(Complex{Float32}, Complex{Float64}, Float32, Float64)}, A::SparseMatrixCSC{Tv<:Union(Complex{Float32}, Complex{Float64}, Float32, Float64), Ti<:Int64})'>associate_matrix{Tv<:Union(Complex{Float32}, Complex{Float64}, Float32, Float64), Ti<:Int64}(mumps::Mumps{Tv<:Union(Complex{Float32}, Complex{Float64}, Float32, Float64)}, A::SparseMatrixCSC{Tv<:Union(Complex{Float32}, Complex{Float64}, Float32, Float64), Ti<:Int64})</a></li>
 <li >
-<a href='#associate_rhs(mumps::Mumps,rhs::Array{Float64,N})'>associate_rhs(mumps::Mumps,rhs::Array{Float64,N})</a></li>
+<a href='#associate_rhs{Tv<:Union(Complex{Float32}, Complex{Float64}, Float32, Float64)}(mumps::Mumps{Tv<:Union(Complex{Float32}, Complex{Float64}, Float32, Float64)}, rhs::Array{Tv<:Union(Complex{Float32}, Complex{Float64}, Float32, Float64), N})'>associate_rhs{Tv<:Union(Complex{Float32}, Complex{Float64}, Float32, Float64)}(mumps::Mumps{Tv<:Union(Complex{Float32}, Complex{Float64}, Float32, Float64)}, rhs::Array{Tv<:Union(Complex{Float32}, Complex{Float64}, Float32, Float64), N})</a></li>
 <li >
-<a href='#factorize(mumps::Mumps)'>factorize(mumps::Mumps)</a></li>
+<a href='#factorize{Tm<:Union(Complex{Float32}, Complex{Float64}, Float32, Float64), Tv<:Number, Ti<:Integer}(mumps::Mumps{Tm<:Union(Complex{Float32}, Complex{Float64}, Float32, Float64)}, A::SparseMatrixCSC{Tv<:Number, Ti<:Integer})'>factorize{Tm<:Union(Complex{Float32}, Complex{Float64}, Float32, Float64), Tv<:Number, Ti<:Integer}(mumps::Mumps{Tm<:Union(Complex{Float32}, Complex{Float64}, Float32, Float64)}, A::SparseMatrixCSC{Tv<:Number, Ti<:Integer})</a></li>
 <li >
-<a href='#factorize(mumps::Mumps,A::Array{Float64,N})'>factorize(mumps::Mumps,A::Array{Float64,N})</a></li>
+<a href='#factorize{Tm<:Union(Complex{Float32}, Complex{Float64}, Float32, Float64), Tv<:Number}(mumps::Mumps{Tm<:Union(Complex{Float32}, Complex{Float64}, Float32, Float64)}, A::Array{Tv<:Number, N})'>factorize{Tm<:Union(Complex{Float32}, Complex{Float64}, Float32, Float64), Tv<:Number}(mumps::Mumps{Tm<:Union(Complex{Float32}, Complex{Float64}, Float32, Float64)}, A::Array{Tv<:Number, N})</a></li>
 <li >
-<a href='#factorize(mumps::Mumps,A::SparseMatrixCSC{Tv,Ti<:Integer})'>factorize(mumps::Mumps,A::SparseMatrixCSC{Tv,Ti<:Integer})</a></li>
+<a href='#factorize{Tv<:Union(Complex{Float32}, Complex{Float64}, Float32, Float64)}(mumps::Mumps{Tv<:Union(Complex{Float32}, Complex{Float64}, Float32, Float64)})'>factorize{Tv<:Union(Complex{Float32}, Complex{Float64}, Float32, Float64)}(mumps::Mumps{Tv<:Union(Complex{Float32}, Complex{Float64}, Float32, Float64)})</a></li>
 <li >
-<a href='#finalize(mumps::Mumps)'>finalize(mumps::Mumps)</a></li>
+<a href='#finalize{Tv<:Union(Complex{Float32}, Complex{Float64}, Float32, Float64)}(mumps::Mumps{Tv<:Union(Complex{Float32}, Complex{Float64}, Float32, Float64)})'>finalize{Tv<:Union(Complex{Float32}, Complex{Float64}, Float32, Float64)}(mumps::Mumps{Tv<:Union(Complex{Float32}, Complex{Float64}, Float32, Float64)})</a></li>
 <li >
-<a href='#get_solution(mumps::Mumps)'>get_solution(mumps::Mumps)</a></li>
+<a href='#get_icntl()'>get_icntl()</a></li>
 <li >
-<a href='#solve(A::SparseMatrixCSC{Tv,Ti<:Integer},rhs::Array{Float64,N})'>solve(A::SparseMatrixCSC{Tv,Ti<:Integer},rhs::Array{Float64,N})</a></li>
+<a href='#get_solution{Tv<:Union(Complex{Float32}, Complex{Float64}, Float32, Float64)}(mumps::Mumps{Tv<:Union(Complex{Float32}, Complex{Float64}, Float32, Float64)})'>get_solution{Tv<:Union(Complex{Float32}, Complex{Float64}, Float32, Float64)}(mumps::Mumps{Tv<:Union(Complex{Float32}, Complex{Float64}, Float32, Float64)})</a></li>
 <li >
-<a href='#solve(mumps::Mumps)'>solve(mumps::Mumps)</a></li>
+<a href='#solve{Tm<:Union(Complex{Float32}, Complex{Float64}, Float32, Float64), Tv<:Number, Tr<:Number, Ti<:Integer}(mumps::Mumps{Tm<:Union(Complex{Float32}, Complex{Float64}, Float32, Float64)}, A::SparseMatrixCSC{Tv<:Number, Ti<:Integer}, rhs::Array{Tr<:Number, N})'>solve{Tm<:Union(Complex{Float32}, Complex{Float64}, Float32, Float64), Tv<:Number, Tr<:Number, Ti<:Integer}(mumps::Mumps{Tm<:Union(Complex{Float32}, Complex{Float64}, Float32, Float64)}, A::SparseMatrixCSC{Tv<:Number, Ti<:Integer}, rhs::Array{Tr<:Number, N})</a></li>
 <li >
-<a href='#solve(mumps::Mumps,A::SparseMatrixCSC{Tv,Ti<:Integer},rhs::Array{Float64,N})'>solve(mumps::Mumps,A::SparseMatrixCSC{Tv,Ti<:Integer},rhs::Array{Float64,N})</a></li>
+<a href='#solve{Tm<:Union(Complex{Float32}, Complex{Float64}, Float32, Float64), Tv<:Number}(mumps::Mumps{Tm<:Union(Complex{Float32}, Complex{Float64}, Float32, Float64)}, rhs::Array{Tv<:Number, N})'>solve{Tm<:Union(Complex{Float32}, Complex{Float64}, Float32, Float64), Tv<:Number}(mumps::Mumps{Tm<:Union(Complex{Float32}, Complex{Float64}, Float32, Float64)}, rhs::Array{Tv<:Number, N})</a></li>
 <li >
-<a href='#solve(mumps::Mumps,rhs::Array{Float64,N})'>solve(mumps::Mumps,rhs::Array{Float64,N})</a></li>
+<a href='#solve{Tv<:Number, Tr<:Number, Ti<:Int64}(A::SparseMatrixCSC{Tv<:Number, Ti<:Int64}, rhs::Array{Tr<:Number, N})'>solve{Tv<:Number, Tr<:Number, Ti<:Int64}(A::SparseMatrixCSC{Tv<:Number, Ti<:Int64}, rhs::Array{Tr<:Number, N})</a></li>
+<li >
+<a href='#solve{Tv<:Union(Complex{Float32}, Complex{Float64}, Float32, Float64)}(mumps::Mumps{Tv<:Union(Complex{Float32}, Complex{Float64}, Float32, Float64)})'>solve{Tv<:Union(Complex{Float32}, Complex{Float64}, Float32, Float64)}(mumps::Mumps{Tv<:Union(Complex{Float32}, Complex{Float64}, Float32, Float64)})</a></li>
 </ul>
 </li>
 <li >
@@ -52,7 +54,9 @@
 <li >
 <ul >
 <li >
-<a href='#Mumps'>Mumps</a></li>
+<a href='#MUMPSException'>MUMPSException</a></li>
+<li >
+<a href='#Mumps{Tv<:Union(Complex{Float32}, Complex{Float64}, Float32, Float64)}'>Mumps{Tv<:Union(Complex{Float32}, Complex{Float64}, Float32, Float64)}</a></li>
 </ul>
 </li>
 <li >
@@ -61,7 +65,9 @@
 <li >
 <ul >
 <li >
-<a href='#default_cntl'>default_cntl</a></li>
+<a href='#default_cntl32'>default_cntl32</a></li>
+<li >
+<a href='#default_cntl64'>default_cntl64</a></li>
 <li >
 <a href='#default_icntl'>default_icntl</a></li>
 <li >
@@ -75,8 +81,8 @@
 </ul>
 <div class='entries'>
 <div class='entry'>
-<div id='associate_matrix(mumps::Mumps,A::SparseMatrixCSC{Tv,Ti<:Integer})' class='entry-name category-method'>
-<div class='category'>[method] &mdash; </div> associate_matrix(mumps::Mumps,A::SparseMatrixCSC{Tv,Ti<:Integer})
+<div id='associate_matrix{Tv<:Union(Complex{Float32}, Complex{Float64}, Float32, Float64), Ti<:Int64}(mumps::Mumps{Tv<:Union(Complex{Float32}, Complex{Float64}, Float32, Float64)}, A::SparseMatrixCSC{Tv<:Union(Complex{Float32}, Complex{Float64}, Float32, Float64), Ti<:Int64})' class='entry-name category-method'>
+<div class='category'>[method] &mdash; </div> associate_matrix{Tv<:Union(Complex{Float32}, Complex{Float64}, Float32, Float64), Ti<:Int64}(mumps::Mumps{Tv<:Union(Complex{Float32}, Complex{Float64}, Float32, Float64)}, A::SparseMatrixCSC{Tv<:Union(Complex{Float32}, Complex{Float64}, Float32, Float64), Ti<:Int64})
 </div>
 <div class='entry-body'>
 <div class="markdown">
@@ -87,15 +93,15 @@
 <table class='meta-table'>
 <tr >
 <td><strong>source:</strong></td><td >
-<a href='https://github.com/dpo/MUMPS.jl/tree/b8b9cf64b8a8ee233807da41ba795cdc12f7b6ec/src/MUMPS.jl#L175'>MUMPS/src/MUMPS.jl:175</a></td>
+<a href='https://github.com/dpo/MUMPS.jl/tree/ea93eeb83fcde4e2797190437a1ea0268b69d33d/src/MUMPS.jl#L201'>MUMPS/src/MUMPS.jl:201</a></td>
 </tr>
 </table>
 </div>
 </div>
 </div>
 <div class='entry'>
-<div id='associate_rhs(mumps::Mumps,rhs::Array{Float64,N})' class='entry-name category-method'>
-<div class='category'>[method] &mdash; </div> associate_rhs(mumps::Mumps,rhs::Array{Float64,N})
+<div id='associate_rhs{Tv<:Union(Complex{Float32}, Complex{Float64}, Float32, Float64)}(mumps::Mumps{Tv<:Union(Complex{Float32}, Complex{Float64}, Float32, Float64)}, rhs::Array{Tv<:Union(Complex{Float32}, Complex{Float64}, Float32, Float64), N})' class='entry-name category-method'>
+<div class='category'>[method] &mdash; </div> associate_rhs{Tv<:Union(Complex{Float32}, Complex{Float64}, Float32, Float64)}(mumps::Mumps{Tv<:Union(Complex{Float32}, Complex{Float64}, Float32, Float64)}, rhs::Array{Tv<:Union(Complex{Float32}, Complex{Float64}, Float32, Float64), N})
 </div>
 <div class='entry-body'>
 <div class="markdown">
@@ -106,15 +112,53 @@
 <table class='meta-table'>
 <tr >
 <td><strong>source:</strong></td><td >
-<a href='https://github.com/dpo/MUMPS.jl/tree/b8b9cf64b8a8ee233807da41ba795cdc12f7b6ec/src/MUMPS.jl#L235'>MUMPS/src/MUMPS.jl:235</a></td>
+<a href='https://github.com/dpo/MUMPS.jl/tree/ea93eeb83fcde4e2797190437a1ea0268b69d33d/src/MUMPS.jl#L297'>MUMPS/src/MUMPS.jl:297</a></td>
 </tr>
 </table>
 </div>
 </div>
 </div>
 <div class='entry'>
-<div id='factorize(mumps::Mumps)' class='entry-name category-method'>
-<div class='category'>[method] &mdash; </div> factorize(mumps::Mumps)
+<div id='factorize{Tm<:Union(Complex{Float32}, Complex{Float64}, Float32, Float64), Tv<:Number, Ti<:Integer}(mumps::Mumps{Tm<:Union(Complex{Float32}, Complex{Float64}, Float32, Float64)}, A::SparseMatrixCSC{Tv<:Number, Ti<:Integer})' class='entry-name category-method'>
+<div class='category'>[method] &mdash; </div> factorize{Tm<:Union(Complex{Float32}, Complex{Float64}, Float32, Float64), Tv<:Number, Ti<:Integer}(mumps::Mumps{Tm<:Union(Complex{Float32}, Complex{Float64}, Float32, Float64)}, A::SparseMatrixCSC{Tv<:Number, Ti<:Integer})
+</div>
+<div class='entry-body'>
+<div class="markdown">
+<p>Combined associate_matrix / factorize. Presume that <code>A</code> is available on all nodes.</p>
+</div>
+<div class='entry-meta'>
+<strong>Details:</strong>
+<table class='meta-table'>
+<tr >
+<td><strong>source:</strong></td><td >
+<a href='https://github.com/dpo/MUMPS.jl/tree/ea93eeb83fcde4e2797190437a1ea0268b69d33d/src/MUMPS.jl#L420'>MUMPS/src/MUMPS.jl:420</a></td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class='entry'>
+<div id='factorize{Tm<:Union(Complex{Float32}, Complex{Float64}, Float32, Float64), Tv<:Number}(mumps::Mumps{Tm<:Union(Complex{Float32}, Complex{Float64}, Float32, Float64)}, A::Array{Tv<:Number, N})' class='entry-name category-method'>
+<div class='category'>[method] &mdash; </div> factorize{Tm<:Union(Complex{Float32}, Complex{Float64}, Float32, Float64), Tv<:Number}(mumps::Mumps{Tm<:Union(Complex{Float32}, Complex{Float64}, Float32, Float64)}, A::Array{Tv<:Number, N})
+</div>
+<div class='entry-body'>
+<div class="markdown">
+<p>Combined associate_matrix / factorize. Presume that <code>A</code> is available on all nodes.</p>
+</div>
+<div class='entry-meta'>
+<strong>Details:</strong>
+<table class='meta-table'>
+<tr >
+<td><strong>source:</strong></td><td >
+<a href='https://github.com/dpo/MUMPS.jl/tree/ea93eeb83fcde4e2797190437a1ea0268b69d33d/src/MUMPS.jl#L428'>MUMPS/src/MUMPS.jl:428</a></td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class='entry'>
+<div id='factorize{Tv<:Union(Complex{Float32}, Complex{Float64}, Float32, Float64)}(mumps::Mumps{Tv<:Union(Complex{Float32}, Complex{Float64}, Float32, Float64)})' class='entry-name category-method'>
+<div class='category'>[method] &mdash; </div> factorize{Tv<:Union(Complex{Float32}, Complex{Float64}, Float32, Float64)}(mumps::Mumps{Tv<:Union(Complex{Float32}, Complex{Float64}, Float32, Float64)})
 </div>
 <div class='entry-body'>
 <div class="markdown">
@@ -125,53 +169,15 @@
 <table class='meta-table'>
 <tr >
 <td><strong>source:</strong></td><td >
-<a href='https://github.com/dpo/MUMPS.jl/tree/b8b9cf64b8a8ee233807da41ba795cdc12f7b6ec/src/MUMPS.jl#L215'>MUMPS/src/MUMPS.jl:215</a></td>
+<a href='https://github.com/dpo/MUMPS.jl/tree/ea93eeb83fcde4e2797190437a1ea0268b69d33d/src/MUMPS.jl#L257'>MUMPS/src/MUMPS.jl:257</a></td>
 </tr>
 </table>
 </div>
 </div>
 </div>
 <div class='entry'>
-<div id='factorize(mumps::Mumps,A::Array{Float64,N})' class='entry-name category-method'>
-<div class='category'>[method] &mdash; </div> factorize(mumps::Mumps,A::Array{Float64,N})
-</div>
-<div class='entry-body'>
-<div class="markdown">
-<p>Combined associate_matrix / factorize. Presume that <code>A</code> is available on all nodes.</p>
-</div>
-<div class='entry-meta'>
-<strong>Details:</strong>
-<table class='meta-table'>
-<tr >
-<td><strong>source:</strong></td><td >
-<a href='https://github.com/dpo/MUMPS.jl/tree/b8b9cf64b8a8ee233807da41ba795cdc12f7b6ec/src/MUMPS.jl#L302'>MUMPS/src/MUMPS.jl:302</a></td>
-</tr>
-</table>
-</div>
-</div>
-</div>
-<div class='entry'>
-<div id='factorize(mumps::Mumps,A::SparseMatrixCSC{Tv,Ti<:Integer})' class='entry-name category-method'>
-<div class='category'>[method] &mdash; </div> factorize(mumps::Mumps,A::SparseMatrixCSC{Tv,Ti<:Integer})
-</div>
-<div class='entry-body'>
-<div class="markdown">
-<p>Combined associate_matrix / factorize. Presume that <code>A</code> is available on all nodes.</p>
-</div>
-<div class='entry-meta'>
-<strong>Details:</strong>
-<table class='meta-table'>
-<tr >
-<td><strong>source:</strong></td><td >
-<a href='https://github.com/dpo/MUMPS.jl/tree/b8b9cf64b8a8ee233807da41ba795cdc12f7b6ec/src/MUMPS.jl#L294'>MUMPS/src/MUMPS.jl:294</a></td>
-</tr>
-</table>
-</div>
-</div>
-</div>
-<div class='entry'>
-<div id='finalize(mumps::Mumps)' class='entry-name category-method'>
-<div class='category'>[method] &mdash; </div> finalize(mumps::Mumps)
+<div id='finalize{Tv<:Union(Complex{Float32}, Complex{Float64}, Float32, Float64)}(mumps::Mumps{Tv<:Union(Complex{Float32}, Complex{Float64}, Float32, Float64)})' class='entry-name category-method'>
+<div class='category'>[method] &mdash; </div> finalize{Tv<:Union(Complex{Float32}, Complex{Float64}, Float32, Float64)}(mumps::Mumps{Tv<:Union(Complex{Float32}, Complex{Float64}, Float32, Float64)})
 </div>
 <div class='entry-body'>
 <div class="markdown">
@@ -182,15 +188,34 @@
 <table class='meta-table'>
 <tr >
 <td><strong>source:</strong></td><td >
-<a href='https://github.com/dpo/MUMPS.jl/tree/b8b9cf64b8a8ee233807da41ba795cdc12f7b6ec/src/MUMPS.jl#L165'>MUMPS/src/MUMPS.jl:165</a></td>
+<a href='https://github.com/dpo/MUMPS.jl/tree/ea93eeb83fcde4e2797190437a1ea0268b69d33d/src/MUMPS.jl#L183'>MUMPS/src/MUMPS.jl:183</a></td>
 </tr>
 </table>
 </div>
 </div>
 </div>
 <div class='entry'>
-<div id='get_solution(mumps::Mumps)' class='entry-name category-method'>
-<div class='category'>[method] &mdash; </div> get_solution(mumps::Mumps)
+<div id='get_icntl()' class='entry-name category-method'>
+<div class='category'>[method] &mdash; </div> get_icntl()
+</div>
+<div class='entry-body'>
+<div class="markdown">
+<p>Obtain an array of integer control parameters.</p>
+</div>
+<div class='entry-meta'>
+<strong>Details:</strong>
+<table class='meta-table'>
+<tr >
+<td><strong>source:</strong></td><td >
+<a href='https://github.com/dpo/MUMPS.jl/tree/ea93eeb83fcde4e2797190437a1ea0268b69d33d/src/MUMPS.jl#L165'>MUMPS/src/MUMPS.jl:165</a></td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class='entry'>
+<div id='get_solution{Tv<:Union(Complex{Float32}, Complex{Float64}, Float32, Float64)}(mumps::Mumps{Tv<:Union(Complex{Float32}, Complex{Float64}, Float32, Float64)})' class='entry-name category-method'>
+<div class='category'>[method] &mdash; </div> get_solution{Tv<:Union(Complex{Float32}, Complex{Float64}, Float32, Float64)}(mumps::Mumps{Tv<:Union(Complex{Float32}, Complex{Float64}, Float32, Float64)})
 </div>
 <div class='entry-body'>
 <div class="markdown">
@@ -201,58 +226,15 @@
 <table class='meta-table'>
 <tr >
 <td><strong>source:</strong></td><td >
-<a href='https://github.com/dpo/MUMPS.jl/tree/b8b9cf64b8a8ee233807da41ba795cdc12f7b6ec/src/MUMPS.jl#L279'>MUMPS/src/MUMPS.jl:279</a></td>
+<a href='https://github.com/dpo/MUMPS.jl/tree/ea93eeb83fcde4e2797190437a1ea0268b69d33d/src/MUMPS.jl#L380'>MUMPS/src/MUMPS.jl:380</a></td>
 </tr>
 </table>
 </div>
 </div>
 </div>
 <div class='entry'>
-<div id='solve(A::SparseMatrixCSC{Tv,Ti<:Integer},rhs::Array{Float64,N})' class='entry-name category-method'>
-<div class='category'>[method] &mdash; </div> solve(A::SparseMatrixCSC{Tv,Ti<:Integer},rhs::Array{Float64,N})
-</div>
-<div class='entry-body'>
-<div class="markdown">
-<p>Combined initialize / analyze / factorize / solve. Presume that <code>A</code> and <code>rhs</code> are available on all nodes. The optional keyword argument <code>sym</code> indicates the symmetry of <code>A</code>. The solution is retrieved and returned.</p>
-</div>
-<div class='entry-meta'>
-<strong>Details:</strong>
-<table class='meta-table'>
-<tr >
-<td><strong>returns:</strong></td><td >
-<code>(Array{Float64,N},)</code>
-</td>
-</tr>
-<tr >
-<td><strong>source:</strong></td><td >
-<a href='https://github.com/dpo/MUMPS.jl/tree/b8b9cf64b8a8ee233807da41ba795cdc12f7b6ec/src/MUMPS.jl#L336'>MUMPS/src/MUMPS.jl:336</a></td>
-</tr>
-</table>
-</div>
-</div>
-</div>
-<div class='entry'>
-<div id='solve(mumps::Mumps)' class='entry-name category-method'>
-<div class='category'>[method] &mdash; </div> solve(mumps::Mumps)
-</div>
-<div class='entry-body'>
-<div class="markdown">
-<p>Solve the system registered with the <code>Mumps</code> object <code>mumps</code>. The matrix and right-hand side(s) must have been previously registered with <code>associate_matrix()</code> and <code>associate_rhs()</code>. The optional keyword argument <code>transposed</code> indicates whether the user wants to solve the forward or transposed system. The solution is stored internally and must be retrieved with <code>get_solution()</code>.</p>
-</div>
-<div class='entry-meta'>
-<strong>Details:</strong>
-<table class='meta-table'>
-<tr >
-<td><strong>source:</strong></td><td >
-<a href='https://github.com/dpo/MUMPS.jl/tree/b8b9cf64b8a8ee233807da41ba795cdc12f7b6ec/src/MUMPS.jl#L261'>MUMPS/src/MUMPS.jl:261</a></td>
-</tr>
-</table>
-</div>
-</div>
-</div>
-<div class='entry'>
-<div id='solve(mumps::Mumps,A::SparseMatrixCSC{Tv,Ti<:Integer},rhs::Array{Float64,N})' class='entry-name category-method'>
-<div class='category'>[method] &mdash; </div> solve(mumps::Mumps,A::SparseMatrixCSC{Tv,Ti<:Integer},rhs::Array{Float64,N})
+<div id='solve{Tm<:Union(Complex{Float32}, Complex{Float64}, Float32, Float64), Tv<:Number, Tr<:Number, Ti<:Integer}(mumps::Mumps{Tm<:Union(Complex{Float32}, Complex{Float64}, Float32, Float64)}, A::SparseMatrixCSC{Tv<:Number, Ti<:Integer}, rhs::Array{Tr<:Number, N})' class='entry-name category-method'>
+<div class='category'>[method] &mdash; </div> solve{Tm<:Union(Complex{Float32}, Complex{Float64}, Float32, Float64), Tv<:Number, Tr<:Number, Ti<:Integer}(mumps::Mumps{Tm<:Union(Complex{Float32}, Complex{Float64}, Float32, Float64)}, A::SparseMatrixCSC{Tv<:Number, Ti<:Integer}, rhs::Array{Tr<:Number, N})
 </div>
 <div class='entry-body'>
 <div class="markdown">
@@ -263,20 +245,20 @@
 <table class='meta-table'>
 <tr >
 <td><strong>returns:</strong></td><td >
-<code>(Array{Float64,N},)</code>
+<code>(Array{Union(Complex{Float32},Complex{Float64},Float32,Float64),N},)</code>
 </td>
 </tr>
 <tr >
 <td><strong>source:</strong></td><td >
-<a href='https://github.com/dpo/MUMPS.jl/tree/b8b9cf64b8a8ee233807da41ba795cdc12f7b6ec/src/MUMPS.jl#L322'>MUMPS/src/MUMPS.jl:322</a></td>
+<a href='https://github.com/dpo/MUMPS.jl/tree/ea93eeb83fcde4e2797190437a1ea0268b69d33d/src/MUMPS.jl#L448'>MUMPS/src/MUMPS.jl:448</a></td>
 </tr>
 </table>
 </div>
 </div>
 </div>
 <div class='entry'>
-<div id='solve(mumps::Mumps,rhs::Array{Float64,N})' class='entry-name category-method'>
-<div class='category'>[method] &mdash; </div> solve(mumps::Mumps,rhs::Array{Float64,N})
+<div id='solve{Tm<:Union(Complex{Float32}, Complex{Float64}, Float32, Float64), Tv<:Number}(mumps::Mumps{Tm<:Union(Complex{Float32}, Complex{Float64}, Float32, Float64)}, rhs::Array{Tv<:Number, N})' class='entry-name category-method'>
+<div class='category'>[method] &mdash; </div> solve{Tm<:Union(Complex{Float32}, Complex{Float64}, Float32, Float64), Tv<:Number}(mumps::Mumps{Tm<:Union(Complex{Float32}, Complex{Float64}, Float32, Float64)}, rhs::Array{Tv<:Number, N})
 </div>
 <div class='entry-body'>
 <div class="markdown">
@@ -287,20 +269,82 @@
 <table class='meta-table'>
 <tr >
 <td><strong>returns:</strong></td><td >
-<code>(Array{Float64,N},)</code>
+<code>(Array{Union(Complex{Float32},Complex{Float64},Float32,Float64),N},)</code>
 </td>
 </tr>
 <tr >
 <td><strong>source:</strong></td><td >
-<a href='https://github.com/dpo/MUMPS.jl/tree/b8b9cf64b8a8ee233807da41ba795cdc12f7b6ec/src/MUMPS.jl#L310'>MUMPS/src/MUMPS.jl:310</a></td>
+<a href='https://github.com/dpo/MUMPS.jl/tree/ea93eeb83fcde4e2797190437a1ea0268b69d33d/src/MUMPS.jl#L436'>MUMPS/src/MUMPS.jl:436</a></td>
 </tr>
 </table>
 </div>
 </div>
 </div>
 <div class='entry'>
-<div id='Mumps' class='entry-name category-type'>
-<div class='category'>[type] &mdash; </div> Mumps
+<div id='solve{Tv<:Number, Tr<:Number, Ti<:Int64}(A::SparseMatrixCSC{Tv<:Number, Ti<:Int64}, rhs::Array{Tr<:Number, N})' class='entry-name category-method'>
+<div class='category'>[method] &mdash; </div> solve{Tv<:Number, Tr<:Number, Ti<:Int64}(A::SparseMatrixCSC{Tv<:Number, Ti<:Int64}, rhs::Array{Tr<:Number, N})
+</div>
+<div class='entry-body'>
+<div class="markdown">
+<p>Combined initialize / analyze / factorize / solve. Presume that <code>A</code> and <code>rhs</code> are available on all nodes. The optional keyword argument <code>sym</code> indicates the symmetry of <code>A</code>. The solution is retrieved and returned.</p>
+</div>
+<div class='entry-meta'>
+<strong>Details:</strong>
+<table class='meta-table'>
+<tr >
+<td><strong>returns:</strong></td><td >
+<code>(Array{Union(Complex{Float32},Complex{Float64},Float32,Float64),N},)</code>
+</td>
+</tr>
+<tr >
+<td><strong>source:</strong></td><td >
+<a href='https://github.com/dpo/MUMPS.jl/tree/ea93eeb83fcde4e2797190437a1ea0268b69d33d/src/MUMPS.jl#L461'>MUMPS/src/MUMPS.jl:461</a></td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class='entry'>
+<div id='solve{Tv<:Union(Complex{Float32}, Complex{Float64}, Float32, Float64)}(mumps::Mumps{Tv<:Union(Complex{Float32}, Complex{Float64}, Float32, Float64)})' class='entry-name category-method'>
+<div class='category'>[method] &mdash; </div> solve{Tv<:Union(Complex{Float32}, Complex{Float64}, Float32, Float64)}(mumps::Mumps{Tv<:Union(Complex{Float32}, Complex{Float64}, Float32, Float64)})
+</div>
+<div class='entry-body'>
+<div class="markdown">
+<p>Solve the system registered with the <code>Mumps</code> object <code>mumps</code>. The matrix and right-hand side(s) must have been previously registered with <code>associate_matrix()</code> and <code>associate_rhs()</code>. The optional keyword argument <code>transposed</code> indicates whether the user wants to solve the forward or transposed system. The solution is stored internally and must be retrieved with <code>get_solution()</code>.</p>
+</div>
+<div class='entry-meta'>
+<strong>Details:</strong>
+<table class='meta-table'>
+<tr >
+<td><strong>source:</strong></td><td >
+<a href='https://github.com/dpo/MUMPS.jl/tree/ea93eeb83fcde4e2797190437a1ea0268b69d33d/src/MUMPS.jl#L336'>MUMPS/src/MUMPS.jl:336</a></td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class='entry'>
+<div id='MUMPSException' class='entry-name category-type'>
+<div class='category'>[type] &mdash; </div> MUMPSException
+</div>
+<div class='entry-body'>
+<div class="markdown">
+<p>Exception type raised in case of error.</p>
+</div>
+<div class='entry-meta'>
+<strong>Details:</strong>
+<table class='meta-table'>
+<tr >
+<td><strong>source:</strong></td><td >
+<a href='https://github.com/dpo/MUMPS.jl/tree/ea93eeb83fcde4e2797190437a1ea0268b69d33d/src/MUMPS.jl#L22'>MUMPS/src/MUMPS.jl:22</a></td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class='entry'>
+<div id='Mumps{Tv<:Union(Complex{Float32}, Complex{Float64}, Float32, Float64)}' class='entry-name category-type'>
+<div class='category'>[type] &mdash; </div> Mumps{Tv<:Union(Complex{Float32}, Complex{Float64}, Float32, Float64)}
 </div>
 <div class='entry-body'>
 <div class="markdown">
@@ -311,26 +355,45 @@
 <table class='meta-table'>
 <tr >
 <td><strong>source:</strong></td><td >
-<a href='https://github.com/dpo/MUMPS.jl/tree/b8b9cf64b8a8ee233807da41ba795cdc12f7b6ec/src/MUMPS.jl#L91'>MUMPS/src/MUMPS.jl:91</a></td>
+<a href='https://github.com/dpo/MUMPS.jl/tree/ea93eeb83fcde4e2797190437a1ea0268b69d33d/src/MUMPS.jl#L112'>MUMPS/src/MUMPS.jl:112</a></td>
 </tr>
 </table>
 </div>
 </div>
 </div>
 <div class='entry'>
-<div id='default_cntl' class='entry-name category-global'>
-<div class='category'>[global] &mdash; </div> default_cntl
+<div id='default_cntl32' class='entry-name category-global'>
+<div class='category'>[global] &mdash; </div> default_cntl32
 </div>
 <div class='entry-body'>
 <div class="markdown">
-<p>Default real parameters</p>
+<p>Default single precision real parameters</p>
 </div>
 <div class='entry-meta'>
 <strong>Details:</strong>
 <table class='meta-table'>
 <tr >
 <td><strong>source:</strong></td><td >
-<a href='https://github.com/dpo/MUMPS.jl/tree/b8b9cf64b8a8ee233807da41ba795cdc12f7b6ec/src/MUMPS.jl#L65'>MUMPS/src/MUMPS.jl:65</a></td>
+<a href='https://github.com/dpo/MUMPS.jl/tree/ea93eeb83fcde4e2797190437a1ea0268b69d33d/src/MUMPS.jl#L77'>MUMPS/src/MUMPS.jl:77</a></td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class='entry'>
+<div id='default_cntl64' class='entry-name category-global'>
+<div class='category'>[global] &mdash; </div> default_cntl64
+</div>
+<div class='entry-body'>
+<div class="markdown">
+<p>Default double precision real parameters</p>
+</div>
+<div class='entry-meta'>
+<strong>Details:</strong>
+<table class='meta-table'>
+<tr >
+<td><strong>source:</strong></td><td >
+<a href='https://github.com/dpo/MUMPS.jl/tree/ea93eeb83fcde4e2797190437a1ea0268b69d33d/src/MUMPS.jl#L86'>MUMPS/src/MUMPS.jl:86</a></td>
 </tr>
 </table>
 </div>
@@ -349,7 +412,7 @@
 <table class='meta-table'>
 <tr >
 <td><strong>source:</strong></td><td >
-<a href='https://github.com/dpo/MUMPS.jl/tree/b8b9cf64b8a8ee233807da41ba795cdc12f7b6ec/src/MUMPS.jl#L20'>MUMPS/src/MUMPS.jl:20</a></td>
+<a href='https://github.com/dpo/MUMPS.jl/tree/ea93eeb83fcde4e2797190437a1ea0268b69d33d/src/MUMPS.jl#L32'>MUMPS/src/MUMPS.jl:32</a></td>
 </tr>
 </table>
 </div>
@@ -368,7 +431,7 @@
 <table class='meta-table'>
 <tr >
 <td><strong>source:</strong></td><td >
-<a href='https://github.com/dpo/MUMPS.jl/tree/b8b9cf64b8a8ee233807da41ba795cdc12f7b6ec/src/MUMPS.jl#L80'>MUMPS/src/MUMPS.jl:80</a></td>
+<a href='https://github.com/dpo/MUMPS.jl/tree/ea93eeb83fcde4e2797190437a1ea0268b69d33d/src/MUMPS.jl#L101'>MUMPS/src/MUMPS.jl:101</a></td>
 </tr>
 </table>
 </div>
@@ -387,7 +450,7 @@
 <table class='meta-table'>
 <tr >
 <td><strong>source:</strong></td><td >
-<a href='https://github.com/dpo/MUMPS.jl/tree/b8b9cf64b8a8ee233807da41ba795cdc12f7b6ec/src/MUMPS.jl#L84'>MUMPS/src/MUMPS.jl:84</a></td>
+<a href='https://github.com/dpo/MUMPS.jl/tree/ea93eeb83fcde4e2797190437a1ea0268b69d33d/src/MUMPS.jl#L105'>MUMPS/src/MUMPS.jl:105</a></td>
 </tr>
 </table>
 </div>
@@ -406,7 +469,7 @@
 <table class='meta-table'>
 <tr >
 <td><strong>source:</strong></td><td >
-<a href='https://github.com/dpo/MUMPS.jl/tree/b8b9cf64b8a8ee233807da41ba795cdc12f7b6ec/src/MUMPS.jl#L76'>MUMPS/src/MUMPS.jl:76</a></td>
+<a href='https://github.com/dpo/MUMPS.jl/tree/ea93eeb83fcde4e2797190437a1ea0268b69d33d/src/MUMPS.jl#L97'>MUMPS/src/MUMPS.jl:97</a></td>
 </tr>
 </table>
 </div>
