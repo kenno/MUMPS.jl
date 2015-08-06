@@ -11,7 +11,7 @@ using MPI
 using BinDeps
 @BinDeps.load_dependencies [:libmumps_simple]
 
-# libjmumps.dylib should be on your LD_LIBRARY_PATH.
+
 mumps_lib = "libmumps_simple";
 macro mumps_call(func, args...)
   quote
