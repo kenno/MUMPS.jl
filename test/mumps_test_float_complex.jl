@@ -6,7 +6,7 @@ icntl[4] = 0;
 
 mumps1 = Mumps{Complex64}(mumps_definite, icntl, default_cntl32);
 A = spdiagm([1., 2., 3., 4.]);
-factorize(mumps1, A);  # Analyze and factorize.
+factorize!(mumps1, A);  # Analyze and factorize.
 rhs = [1., 4., 9., 16.];
 x = solve(mumps1, rhs);
 finalize(mumps1);
@@ -15,7 +15,7 @@ MPI.Barrier(comm)
 
 mumps2 = Mumps{Complex64}(mumps_unsymmetric, icntl, default_cntl32);
 A = rand(4,4); A = sparse(A + A');
-factorize(mumps2, A);
+factorize!(mumps2, A);
 rhs = rand(4);
 x = solve(mumps2, rhs);
 finalize(mumps2);
@@ -24,7 +24,7 @@ MPI.Barrier(comm)
 
 mumps3 = Mumps{Complex64}(mumps_unsymmetric, icntl, default_cntl32);
 A = complex64(sparse(rand(4,4)) + im * sparse(rand(4,4)));
-factorize(mumps3, A);
+factorize!(mumps3, A);
 rhs = complex64(rand(4) + im * rand(4));
 x = solve(mumps3, rhs);
 finalize(mumps3);
