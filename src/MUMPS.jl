@@ -181,6 +181,9 @@ function get_icntl(;
   return icntl;
 end
 
+if VERSION >= v"0.4-"
+  import Base.finalize
+end
 
 "Terminate a Mumps instance."
 function finalize{Tv <: MUMPSValueDataType}(mumps :: Mumps{Tv})
